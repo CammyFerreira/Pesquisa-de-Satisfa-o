@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de satisfação</title>
+</head>
+
+<body>
+    <center>
+        <h2>Formulário de pesquisa de satisfação</h2>
+        <form>
+            <label>Nome:</label>
+            <input type="text" required maxlength="50" minlength="3" />
+
+            <label>Email:</label>
+            <input type="text" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+
+            <label>Data de nascimento:</label>
+            <input type="date" required />
+
+            <label>Telefone:</label>
+            <input type="number" required />
+
+            <label>Endereço:</label>
+            <input type="text" required />
+
+
+
+            <label>Qual a sua cor favorita?</label>
+            <input type="color" name="Cor" />
+
+            <Label>Qual o seu navegador favorito?</Label>
+            <input type="Text" name="browser" list="browser" />
+
+            <datalist id="browser">
+                <option value="Internet Explorer">
+                <option value="FireFox">
+                <option value="Safari">
+                <option value="Chrome">
+                <option value="Opera">
+
+            </datalist>
+
+            <label>Qual a sua serie favorita?</label>
+
+            <select name="select">
+
+                <option value="Sandman">Sandman</option>
+                <option value="Stranger Things">Stranger Things</option>
+                <option value="the boys">The boys</option>
+                <option value="TWD">TWD</option>
+                <option value="The Crown">The Crown</option>
+                <option value="Outros">Outros</option>
+            </select>
+            
+            <h2>Sugestões? :)</h2>
+            <textarea name="post-text" cols="92" rows="15"></textarea>
+
+            <input type="button" value="Enviar">
+        </form>
+
+    </center>
+</body>
+
+</html>
